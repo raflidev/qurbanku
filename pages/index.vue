@@ -71,7 +71,7 @@
 
       <section class="bg-yellow-100 mt-20">
         <div class="w-3/4 mx-auto py-12">
-          <div class="flex flex-wrap justify-center space-y-5 md:space-x-4">
+          <div class="flex flex-wrap justify-center space-y-5 md:space-y-0 space-x-0 md:space-x-4">
               <img src="https://avatars.githubusercontent.com/u/17506770?v=4" width="150" class="rounded-xl" alt="david" data-aos="fade-right">
               <div class="w-full md:w-2/5 space-y-5" data-aos="fade-left">
                 <p class="font-semibold text-xl">
