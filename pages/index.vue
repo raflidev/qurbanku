@@ -1,25 +1,27 @@
 <template>
   <div>
-    <div>
+    <div class="w-full">
       <Navbar/>
-      <section class="w-3/4 mx-auto mt-28 flex justify-between items-center">
-        <div class="w-2/5 items-center">
-          <h1 class="font-bold text-5xl leading-snug">Siap Kurban <br> Tahun Depan!</h1>
+      <section class="w-full md:w-3/4 mx-auto mt-14 md:mt-28 flex justify-between items-center">
+        <div class="w-full md:w-2/5 items-center p-3 md:p-0">
+          <h1 class="font-bold text-4xl md:text-5xl leading-snug">Siap Kurban <br> Tahun Depan!</h1>
           <p class="text-xl mt-5 mb-4">Program Nabung 10.000 Rupiah, Siapapun Berkenan Berkurban</p>
-          <button class="px-4 py-2 bg-yellow-400 rounded-lg font-semibold">Mulai Nabung, Gratis!</button>
+          <div>
+            <button class="w-full md:w-auto px-4 py-2 bg-yellow-400 rounded-lg font-semibold">Mulai Nabung, Gratis!</button>
+          </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 hidden md:inline">
           <img src="image/cow.png" width="700" alt="sapi kurban">
         </div>
       </section>
       <section class="mt-20">
         <h1 class="font-semibold text-sm uppercase text-center">Telah dipercaya Oleh Beberapa Perusahaan Ternama</h1>
           <div class="flex justify-center py-6">
-            <div class="grid grid-flow-col gap-6">
-              <img src="/vendor/ovo.png" width="80" alt="ovo">
-              <img src="/vendor/kitabisacom.png" width="120" alt="kitabisa">
-              <img src="/vendor/jenius.png" width="100" alt="jenius">
-              <img src="/vendor/gojek.png" width="100" alt="gojek">
+            <div class="grid grid-flow-col grid-cols-2 md:grid-cols-1 grid-rows-2 md:grid-rows-1 gap-6">
+              <img src="/vendor/ovo.png" width="80" alt="ovo" data-aos="fadeup" data-aos-duration="5000">
+              <img src="/vendor/kitabisacom.png" width="120" alt="kitabisa" data-aos="fadeup" data-aos-duration="800">
+              <img src="/vendor/jenius.png" width="100" alt="jenius" data-aos="fadeup" data-aos-duration="1000">
+              <img src="/vendor/gojek.png" width="100" alt="gojek" data-aos="fadeup" data-aos-duration="1200">
             </div>
           </div>
        
@@ -27,9 +29,9 @@
 
       <section class="mt-20">
         <div class="w-3/4 mx-auto">
-          <h1 class="text-center text-3xl font-semibold">Daftar Paket</h1>
-          <div class="flex justify-center items-center space-x-10 my-12">
-            <div class="w-1/4 bg-yellow-100 py-4 px-6 rounded -mt-10">
+          <h1 class="text-center text-3xl font-bold">Daftar Paket</h1>
+          <div class="flex flex-wrap justify-center items-center space-y-10 md:space-x-10 my-12">
+            <div class="w-full md:w-1/4 bg-yellow-100 py-4 px-6 rounded mt-0 md:-mt-10" data-aos="fade-up" data-aos-duration="500">
               <div class="text-xs pb-3 text-center">Rekomendasi</div>
               <h2 class="text-center font-semibold h-full rounded pb-3">Qurban Standar</h2>
               <p class="text-center text-2xl font-bold">Rp 1.850.000</p>
@@ -41,7 +43,7 @@
                 <button class="px-4 py-2 rounded-md font-semibold text-center bg-yellow-400 w-full text-sm">Lihat Selengkapnya</button>
               </div>
             </div>
-            <div class="w-1/4 bg-gray-100 py-4 px-6 rounded">
+            <div class="w-full md:w-1/4 bg-gray-100 py-4 px-6 rounded" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="text-center font-semibold h-full rounded pb-3">1/7 Sapi</h2>
               <p class="text-center text-2xl font-bold">Rp 2.350.000</p>
               <ul class="mt-5">
@@ -52,7 +54,7 @@
                 <button class="px-4 py-2 rounded-md font-semibold text-center bg-yellow-400 w-full text-sm">Lihat Selengkapnya</button>
               </div>
             </div>
-            <div class="w-1/4 bg-gray-100 py-4 px-6 rounded">
+            <div class="w-full md:w-1/4 bg-gray-100 py-4 px-6 rounded" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="text-center font-semibold h-full rounded pb-3">Sapi</h2>
               <p class="text-center text-2xl font-bold">Rp 16.000.000</p>
               <ul class="mt-5">
@@ -69,9 +71,9 @@
 
       <section class="bg-yellow-100 mt-20">
         <div class="w-3/4 mx-auto py-12">
-          <div class="flex justify-center space-x-4">
-              <img src="https://avatars.githubusercontent.com/u/17506770?v=4" width="150" class="rounded-xl" alt="">
-              <div class="h-20 w-2/5 space-y-5">
+          <div class="flex flex-wrap justify-center space-y-5 md:space-x-4">
+              <img src="https://avatars.githubusercontent.com/u/17506770?v=4" width="150" class="rounded-xl" alt="david" data-aos="fade-right">
+              <div class="w-full md:w-2/5 space-y-5" data-aos="fade-left">
                 <p class="font-semibold text-xl">
                   Qurbanku Membantu Saya dan Rekan-Rekan Saya Untuk Patungan Sapi Untuk Qurban Dari Nabung 10.000 Perhari, Dan itu Luar Biasa. 
                 </p>
@@ -83,8 +85,8 @@
 
       <section class="w-3/4 mx-auto mt-24">
         <h1 class="text-center text-3xl font-bold">Qurbanku Juga Menyediakan Aqiqah</h1>
-        <div class="flex justify-center items-center space-x-10 my-16">
-          <div class="w-1/4 bg-gray-100 py-4 px-6 rounded">
+        <div class="flex flex-wrap justify-center items-center space-y-10 space-x-0 md:space-y-0 md:space-x-10 my-16">
+          <div class="w-full md:w-1/4 bg-gray-100 py-4 px-6 rounded" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="text-center font-semibold h-full rounded pb-3">Aqiqah Standar</h2>
             <p class="text-center text-2xl font-bold">Rp 2.300.000</p>
             <ul class="mt-5">
@@ -95,7 +97,7 @@
               <button class="px-4 py-2 rounded-md font-semibold text-center bg-yellow-400 w-full text-sm">Lihat Selengkapnya</button>
             </div>
           </div>
-          <div class="w-1/4 bg-yellow-100 py-4 px-6 rounded -mt-5">
+          <div class="w-full md:w-1/4 bg-yellow-100 py-4 px-6 rounded mt-0 md:-mt-5" data-aos="fade-up" data-aos-duration="500">
           <div class="text-xs pb-3 text-center">Rekomendasi</div>
             <h2 class="text-center font-semibold h-full rounded pb-3">Aqiqah Super</h2>
             <p class="text-center text-2xl font-bold">Rp 2.400.000</p>
@@ -107,7 +109,7 @@
               <button class="px-4 py-2 rounded-md font-semibold text-center bg-yellow-400 w-full text-sm">Lihat Selengkapnya</button>
             </div>
           </div>
-          <div class="w-1/4 bg-gray-100 py-4 px-6 rounded">
+          <div class="w-full md:w-1/4 bg-gray-100 py-4 px-6 rounded" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="text-center font-semibold h-full rounded pb-3">Aqiqah Istimewa</h2>
             <p class="text-center text-2xl font-bold">Rp 3.150.000</p>
             <ul class="mt-5">
@@ -121,8 +123,8 @@
         </div>
       </section>
       <section class="mt-52 pb-5 w-3/4 mx-auto">
-        <div class="flex justify-between">
-          <div class="w-1/4">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-1/4 mb-4 md:mb-0">
             <h1 class="text-2xl font-bold">Qurbanku</h1>
             <p class="mt-4">
               Qurbanku adalah platform untuk menabung qurban sekaligus marketplace untuk membeli langsung qurban dan aqiqah
@@ -131,7 +133,7 @@
               &copy; 2021 Qurbanku
             </p>
           </div>
-          <div class="w-3/4 flex justify-end space-x-10">
+          <div class="w-full md:w-3/4 flex flex-wrap justify-start md:justify-end space-y-5 md:space-y-0 space-x-0 md:space-x-10">
             <div>
               <h2 class="font-semibold text-xl">Produk</h2>
               <ul class="mt-3 space-y-2">
